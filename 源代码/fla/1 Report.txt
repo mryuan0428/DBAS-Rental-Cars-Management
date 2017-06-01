@@ -1,0 +1,26 @@
+1.swf       1         222162         222162    Scene 1 
+Scene 1                                0             0                   399
+
+                                     0             0                     0
+Symbol 14                              0             0                     0
+9                                     50             0                     0
+8                                     50             0                     0
+7                                     50             0                     0
+6                                     50             0                     0
+5                                     50             0                     0
+4                                     50             0                     0
+3                                     50             0                     0
+2                                     50             0                     0
+1                                     50             0                     0
+button                                67             0                     0
+mc                                     0             0                   170
+                                   0             0                     0
+                                   120             0                     0
+
+               163    mc:Layer 2:1
+                 7    mc:Layer 2:2
+                47    Scene 1:Layer 5:1:                44    Scene 1:Layer 5:1:                46    Scene 1:Layer 5:1:                44    Scene 1:Layer 5:1:                41    Scene 1:Layer 5:1:                43    Scene 1:Layer 5:1:                46    Scene 1:Layer 5:1:                43    Scene 1:Layer 5:1:                45    Scene 1:Layer 5:1:
+1.jpg                          25665      720000   2.jpg                          26756      720000   3.jpg                          26570      720000   4.jpg                          22575      720000   5.jpg                          12373      723604   6.jpg                          23915      722400   7.jpg                          23921      720000   8.jpg                          25535      721200   9.jpg                          26436      720000                                 5136      120000   JPEG 
+
+
+

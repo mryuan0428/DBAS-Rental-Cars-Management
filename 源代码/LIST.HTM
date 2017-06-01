@@ -1,0 +1,236 @@
+<html>
+	<head>
+		<title>动态大纲</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<style type="text/css"> <!-- td { font-size: 12px; line-height: 130%; }
+	--></style>
+		<script language="JavaScript">
+function show_hide(img,line)
+{
+	if (line.style.display=="none")
+	{
+		line.style.display=""
+		img.src="images/minus.gif"
+	}
+	else
+	{
+		line.style.display="none"
+		img.src="images/plus.gif"
+	}
+		
+}
+		</script>
+	</head>
+	<body bgcolor="#ececec">
+		<table width="185" border="0">
+			<tr style="CURSOR: hand" onclick="show_hide(img1,line1)">
+				<td style="height: 18px"><IMG id="img1" height="9" src="images/plus.gif" width="9"></td>
+				<td width="159" colSpan="2" style="height: 18px"><strong>车辆信息管理</strong></td>
+			</tr>
+			<tr>
+				<td width="100%" colSpan="2">
+					<table id="line1" style="DISPLAY: none" width="100%" border="0">
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td width="87"><A href="carinfo/add.aspx" target="mainFrame">增加车辆信息</A></td>
+							<td width="79">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td width="87"><A href="carinfo/modify.aspx" target="mainFrame">修改车辆信息</A></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td width="87"><A href="carinfo/delete.aspx" target="mainFrame">删除车辆信息</A></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td colSpan="2">
+								<table cellSpacing="0" cellPadding="0" border="0">
+									<tr style="CURSOR: hand" onclick="show_hide(img3,line3)">
+										<td width="12" height="19"><IMG id="img3" height="9" src="images/plus.gif" width="9"></td>
+										<td width="148" height="20">查询车辆信息</td>
+									</tr>
+									<tr id="line3" style="DISPLAY: none">
+										<td>&nbsp;</td>
+										<td height="20">
+											<p><A href="carinfo/supersearch.aspx" target="mainFrame">高级查询</A><br>
+												<A href="carinfo/search.aspx" target="mainFrame">普通查询</A></p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td colSpan="2">
+								<table cellSpacing="0" cellPadding="0" border="0">
+									<tr style="CURSOR: hand" onclick="show_hide(img4,line4)">
+										<td width="12" height="19"><IMG id="img4" height="9" src="images/plus.gif" width="9"></td>
+										<td width="148" height="20">独立信息修改</td>
+									</tr>
+									<tr id="line4" style="DISPLAY: none">
+										<td>&nbsp;</td>
+										<td height="20">
+											<p><A href="carinfo/addcarcolor.aspx" target="mainFrame">车辆颜色</A><br>
+												<A href="carinfo/addcarname.aspx" target="mainFrame">车辆名称</A><br>
+												<A href="carinfo/addinsurecompany.aspx" target="mainFrame">保险公司</A>
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr style="CURSOR: hand" onclick="show_hide(img2,line2)">
+				<td><IMG id="img2" height="9" src="images/plus.gif" width="9"></td>
+				<td width="159" colSpan="2"><strong>客户信息管理</strong></td>
+			</tr>
+			<tr>
+				<td width="100%" colSpan="2">
+					<table id="line2" style="DISPLAY: none" width="100%" border="0">
+						<tr>
+							<td>&nbsp;</td>
+							<td colSpan="2">
+								<table cellSpacing="0" cellPadding="0" border="0">
+									<tr style="CURSOR: hand" onclick="show_hide(img5,line5)">
+										<td width="12" height="19"><IMG id="img5" height="9" src="images/plus.gif" width="9"></td>
+										<td width="148" height="20">增加客户信息</td>
+									</tr>
+									<tr id="line5" style="DISPLAY: none">
+										<td>&nbsp;</td>
+										<td height="20">
+											<p><A href="client/client_add_person.aspx" target="mainFrame">增加个人客户信息</A><br>
+												<A href="client/client_add_company.aspx" target="mainFrame">增加公司客户信息</A></p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td colSpan="2">
+								<table cellSpacing="0" cellPadding="0" border="0">
+									<tr style="CURSOR: hand" onclick="show_hide(img6,line6)">
+										<td width="12" height="19"><IMG id="img6" height="9" src="images/plus.gif" width="9"></td>
+										<td width="148" height="20">修改客户信息</td>
+									</tr>
+									<tr id="line6" style="DISPLAY: none">
+										<td>&nbsp;</td>
+										<td height="20">
+											<p><A href="client/search_all_person.aspx" target="mainFrame">修改个人客户信息</A><br>
+												<A href="client/search_all_company.aspx" target="mainFrame">修改公司客户信息</A></p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td colSpan="2">
+								<table cellSpacing="0" cellPadding="0" border="0">
+									<tr style="CURSOR: hand" onclick="show_hide(img7,line7)">
+										<td width="12" height="19"><IMG id="img7" height="9" src="images/plus.gif" width="9"></td>
+										<td width="148" height="20">删除客户信息</td>
+									</tr>
+									<tr id="line7" style="DISPLAY: none">
+										<td>&nbsp;</td>
+										<td height="20">
+											<p><A href="client/search_all_person.aspx" target="mainFrame">删除个人客户信息</A><br>
+												<A href="client/search_all_company.aspx" target="mainFrame">删除公司客户信息</A></p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td colSpan="2">
+								<table cellSpacing="0" cellPadding="0" border="0">
+									<tr style="CURSOR: hand" onclick="show_hide(img9,line9)">
+										<td width="12" height="19"><IMG id="img9" height="9" src="images/plus.gif" width="9"></td>
+										<td width="148" height="20">浏览查询客户信息</td>
+									</tr>
+									<tr id="line9" style="DISPLAY: none">
+										<td>&nbsp;</td>
+										<td height="20">
+											<p><A href="client/search_all_person.aspx" target="mainFrame">浏览查询个人客户信息</A><br>
+												<A href="client/search_all_company.aspx" target="mainFrame">浏览查询公司客户信息</A></p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr style="CURSOR: hand" onclick="show_hide(img11,line11)">
+				<td><IMG id="img11" height="9" src="images/plus.gif" width="9"></td>
+				<td width="159" colSpan="2"><strong>合同信息管理</strong></td>
+			</tr>
+			<tr>
+				<td width="100%" colSpan="2">
+					<table id="line11" style="DISPLAY: none" width="100%" border="0">
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td colSpan="2">
+								<table id="Table2" cellSpacing="0" cellPadding="0" border="0">
+									<tr style="CURSOR: hand" onclick="show_hide(img12,line12)">
+										<td width="12" height="19"><IMG id="img12" height="9" src="images/plus.gif" width="9"></td>
+										<td width="148" height="20">新建合同</td>
+									</tr>
+									<tr id="line12" style="DISPLAY: none">
+										<td>&nbsp;</td>
+										<td height="20">
+											<p><A href="pretrade/pretrade.aspx" target="mainFrame">新建预定合同</A><br>
+												<A href="trade/newtrade.aspx" target="mainFrame">新建正式租赁合同</A><br>
+												<A href="pretrade/browsepretrade.aspx" target="mainFrame">预定合同-&gt;租赁合同</A></p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td colSpan="2">
+								<table id="Table7" cellSpacing="0" cellPadding="0" border="0">
+									<tr style="CURSOR: hand" onclick="show_hide(img13,line13)">
+										<td width="12" height="19"><IMG id="img13" height="9" src="images/plus.gif" width="9"></td>
+										<td width="148" height="20">查询/修改/删除合同</td>
+									</tr>
+									<tr id="line13" style="DISPLAY: none">
+										<td>&nbsp;</td>
+										<td height="20">
+											<p><A href="pretrade/search_pretrade.aspx" target="mainFrame">查询预定合同</A><br>
+												<A href="trade/modify.aspx" target="mainFrame">查询租赁合同</A><br>
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td width="78"><A href="trade/relet.aspx" target="mainFrame">租赁合同续租</A></td>
+							<td width="79">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td><A href="trade/return.aspx" target="mainFrame">客户还车管理</A></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="11">&nbsp;</td>
+							<td><A href="trade/exchangecar.aspx" target="mainFrame">客户换车管理</A></td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

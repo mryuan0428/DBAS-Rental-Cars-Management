@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet1" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:Locale="zh-CN">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="carinfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="序号" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="车牌号" type="xs:string" />
+              <xs:element name="车辆类型" type="xs:string" minOccurs="0" />
+              <xs:element name="车辆名称" type="xs:string" minOccurs="0" />
+              <xs:element name="车辆颜色" type="xs:string" minOccurs="0" />
+              <xs:element name="车辆状态" type="xs:string" minOccurs="0" />
+              <xs:element name="业务部编号" type="xs:int" minOccurs="0" />
+              <xs:element name="公里数" type="xs:decimal" minOccurs="0" />
+              <xs:element name="是否有效" type="xs:string" minOccurs="0" />
+              <xs:element name="记录时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="开始记录时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="发动机号" type="xs:string" minOccurs="0" />
+              <xs:element name="车架号" type="xs:string" minOccurs="0" />
+              <xs:element name="防盗器号" type="xs:string" minOccurs="0" />
+              <xs:element name="保险开始时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="保险结束时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="保险号" type="xs:string" minOccurs="0" />
+              <xs:element name="保险类型" type="xs:string" minOccurs="0" />
+              <xs:element name="保险公司" type="xs:string" minOccurs="0" />
+              <xs:element name="油类型" type="xs:string" minOccurs="0" />
+              <xs:element name="备注" type="xs:string" minOccurs="0" />
+              <xs:element name="业务部序号" type="xs:int" minOccurs="0" />
+              <xs:element name="车辆颜色序号" type="xs:int" minOccurs="0" />
+              <xs:element name="车辆名称序号" type="xs:int" minOccurs="0" />
+              <xs:element name="车辆状态序号" type="xs:int" minOccurs="0" />
+              <xs:element name="车辆类型序号" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:carinfo" />
+      <xs:field xpath="mstns:序号" />
+      <xs:field xpath="mstns:车牌号" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
